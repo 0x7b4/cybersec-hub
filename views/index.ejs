@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/navbar', {page: page}) %>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="terminal-box">
+                    <div class="terminal-header">
+                        <span class="terminal-button red"></span>
+                        <span class="terminal-button yellow"></span>
+                        <span class="terminal-button green"></span>
+                        <span class="terminal-title">terminal@cybersec</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">root@cybersec:~#</span> <span class="typing">cat welcome.txt</span></p>
+                        <h1 class="glitch" data-text="CYBERSEC HUB">CYBERSEC HUB</h1>
+                        <p class="subtitle">Penetration Testing | Security Research | Ethical Hacking</p>
+                        <p class="description">
+                            > Exploring vulnerabilities, one exploit at a time<br>
+                            > Professional security tools and resources<br>
+                            > Learning through doing, secured by design
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="/tools" class="btn btn-primary">Explore Tools</a>
+                            <a href="/blog" class="btn btn-secondary">Read Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Security Analysis</h3>
+                        <p>Deep dive into security vulnerabilities and exploitation techniques</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Penetration Testing</h3>
+                        <p>Professional pentesting tools and methodologies</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <h3>Ethical Hacking</h3>
+                        <p>Learn ethical hacking with hands-on tutorials</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📡</div>
+                        <h3>Network Security</h3>
+                        <p>Network analysis and security assessment tools</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
