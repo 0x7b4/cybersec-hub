@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/navbar', {page: page}) %>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Security Tools</h1>
+                <p>A collection of essential cybersecurity and pentesting tools</p>
+            </div>
+        </section>
+
+        <section class="tools-section">
+            <div class="container">
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>🔍 Nmap Scanner</h3>
+                        <p>Network discovery and security auditing</p>
+                        <code>nmap -sV -sC target.com</code>
+                    </div>
+                    <div class="tool-card">
+                        <h3>🦈 Wireshark</h3>
+                        <p>Network protocol analyzer</p>
+                        <code>wireshark -i eth0</code>
+                    </div>
+                    <div class="tool-card">
+                        <h3>💉 SQLMap</h3>
+                        <p>Automatic SQL injection tool</p>
+                        <code>sqlmap -u "http://target.com?id=1"</code>
+                    </div>
+                    <div class="tool-card">
+                        <h3>🔨 Metasploit</h3>
+                        <p>Penetration testing framework</p>
+                        <code>msfconsole</code>
+                    </div>
+                    <div class="tool-card">
+                        <h3>🔓 John the Ripper</h3>
+                        <p>Password cracking tool</p>
+                        <code>john --wordlist=rockyou.txt hash.txt</code>
+                    </div>
+                    <div class="tool-card">
+                        <h3>🌐 Burp Suite</h3>
+                        <p>Web application security testing</p>
+                        <code>burpsuite</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
