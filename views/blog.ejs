@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/navbar', {page: page}) %>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Security Blog</h1>
+                <p>Latest articles on cybersecurity and penetration testing</p>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-meta">
+                            <span class="date">2025-11-02</span>
+                            <span class="category">Pentesting</span>
+                        </div>
+                        <h3>Advanced SQL Injection Techniques</h3>
+                        <p>Exploring advanced SQL injection methods including blind SQLi, time-based attacks, and NoSQL injection...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-meta">
+                            <span class="date">2025-10-28</span>
+                            <span class="category">Web Security</span>
+                        </div>
+                        <h3>OWASP Top 10 Deep Dive</h3>
+                        <p>A comprehensive analysis of the OWASP Top 10 vulnerabilities and how to prevent them in modern web applications...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-meta">
+                            <span class="date">2025-10-15</span>
+                            <span class="category">Network Security</span>
+                        </div>
+                        <h3>Network Reconnaissance Guide</h3>
+                        <p>Complete guide to network reconnaissance using Nmap, Masscan, and other essential tools...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
