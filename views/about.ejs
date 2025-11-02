@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/navbar', {page: page}) %>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>About CyberSec Hub</h1>
+                <p>Dedicated to ethical hacking and security research</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span class="terminal-button red"></span>
+                            <span class="terminal-button yellow"></span>
+                            <span class="terminal-button green"></span>
+                            <span class="terminal-title">about.txt</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="prompt">root@cybersec:~#</span> cat about.txt</p>
+                            <div class="about-text">
+                                <h2>Mission Statement</h2>
+                                <p>CyberSec Hub is dedicated to promoting ethical hacking practices and advancing cybersecurity knowledge. We provide resources, tools, and tutorials for security professionals and enthusiasts.</p>
+
+                                <h2>What We Do</h2>
+                                <ul>
+                                    <li>▸ Penetration testing tutorials and guides</li>
+                                    <li>▸ Security tool documentation and reviews</li>
+                                    <li>▸ Vulnerability research and disclosure</li>
+                                    <li>▸ CTF challenges and writeups</li>
+                                    <li>▸ Educational content for ethical hackers</li>
+                                </ul>
+
+                                <h2>Contact</h2>
+                                <p>GitHub: <a href="https://github.com/0x7b4" target="_blank">@0x7b4</a></p>
+                                <p>Blog: <a href="https://0x7b4.github.io/pentest/" target="_blank">0x7b4 Pentest Blog</a></p>
+
+                                <p class="disclaimer"><strong>Disclaimer:</strong> All content is for educational purposes only. Always obtain proper authorization before testing any system.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
