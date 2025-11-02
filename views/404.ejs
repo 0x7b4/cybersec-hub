@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/navbar', {page: page}) %>
+
+    <main>
+        <section class="error-section">
+            <div class="container">
+                <div class="terminal-box">
+                    <div class="terminal-header">
+                        <span class="terminal-button red"></span>
+                        <span class="terminal-button yellow"></span>
+                        <span class="terminal-button green"></span>
+                        <span class="terminal-title">error.log</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">root@cybersec:~#</span> ls <%= req.path %></p>
+                        <p class="error-text">ls: cannot access '<%= req.path %>': No such file or directory</p>
+                        <h1 class="error-code">404</h1>
+                        <p class="error-message">PAGE NOT FOUND</p>
+                        <p>The requested resource could not be located on this server.</p>
+                        <a href="/" class="btn btn-primary">Return to Home</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
