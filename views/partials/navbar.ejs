@@ -1,0 +1,20 @@
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <span class="terminal-prompt">root@cybersec:~#</span>
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="/" class="<%= page === 'home' ? 'active' : '' %>">Home</a></li>
+            <li><a href="/tools" class="<%= page === 'tools' ? 'active' : '' %>">Tools</a></li>
+            <li><a href="/blog" class="<%= page === 'blog' ? 'active' : '' %>">Blog</a></li>
+            <li><a href="/about" class="<%= page === 'about' ? 'active' : '' %>">About</a></li>
+        </ul>
+        <div class="mobile-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
